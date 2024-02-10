@@ -1,0 +1,1814 @@
+{
+  "root": {
+    "key": "root",
+    "children": [
+      {
+        "children": [
+          {
+            "key": "ffbdf4a9-6f18-4bb7-9f5f-c0b1cb5865f0",
+            "fov": true,
+            "orb": true,
+            "gnd": true,
+            "sky": false,
+            "show": true,
+            "data": null,
+            "name": "US",
+            "nodeType": "group",
+            "children": [
+              {
+                "key": "bbb779f5-62d3-486d-a808-629c7be240d4",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "color": [0, 255, 0],
+                  "fovs": [
+                    {
+                      "azAngle": null,
+                      "color": [255, 255, 255],
+                      "fovEnum": "cone",
+                      "fovId": "32276",
+                      "maxFovAngle": 10,
+                      "minFovAngle": 0
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1 32276U 07052B   23059.86681669 +.00000000  31198-1  00000 0 0 0001",
+                    "line2": "2 32276  66.0861 356.2554 0010791 340.8850  19.4029  2.1310887511942"
+                  },
+                  "satId": 1,
+                  "satName": "32276",
+                  "id": 1
+                },
+                "name": "32276",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 1,
+                "fovId": "32276",
+                "id": 1
+              },
+              {
+                "key": "b63156f4-2c67-454f-9203-04163427526c",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "id": 2,
+                  "satId": 4,
+                  "color": [200, 200, 10],
+                  "satName": "Name-1234567890",
+                  "orbitColor": [10, 88, 200],
+                  "fovs": [
+                    {
+                      "fovId": "2",
+                      "fovEnum": "cone",
+                      "azAngle": 0,
+                      "maxFovAngle": 10,
+                      "minFovAngle": 0,
+                      "color": [6, 87, 58]
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1 T0999U 59001B   21276.33263172 +.00000285 +00000-0 +17714-3 0 09991",
+                    "line2": "2 T0999 032.8956 136.3195 1663303 042.2944 329.4577 11.44393326334152"
+                  }
+                },
+                "name": "Name-1234567890",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 2,
+                "fovId": "33318",
+                "id": 2
+              },
+              {
+                "key": "f3f3247b-059b-4444-a484-c4b873673990",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": false,
+                "data": {
+                  "id": 3,
+                  "satId": 6,
+                  "color": [128, 128, 10],
+                  "satName": "1234567890",
+                  "fovs": [
+                    {
+                      "fovId": "Ikonos 1",
+                      "fovEnum": "butterfly",
+                      "azAngle": 11,
+                      "maxFovAngle": 11,
+                      "minFovAngle": 1,
+                      "color": [128, 128, 10]
+                    },
+                    {
+                      "fovId": "Ikonos 2",
+                      "fovEnum": "cone",
+                      "azAngle": 22,
+                      "maxFovAngle": 22,
+                      "minFovAngle": 2,
+                      "color": [255, 0, 255]
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1 F5919U 99051A   21276.38182844  .00000423  00000-0  52901-4 0  9996",
+                    "line2": "2 F5919  98.1976  68.0787 0008944  77.0633 283.1581 14.87736267182803"
+                  }
+                },
+                "name": "1234567890",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 3,
+                "fovId": "55555",
+                "id": 3
+              },
+              {
+                "key": "55860c98-93e6-411e-ad36-84aa01697dcd",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "id": 4,
+                  "satId": 2,
+                  "color": [0, 255, 0],
+                  "satName": "Name-100000",
+                  "fovs": [
+                    {
+                      "fovId": "33318",
+                      "fovEnum": "cone",
+                      "azAngle": null,
+                      "maxFovAngle": 10,
+                      "minFovAngle": 0,
+                      "color": [255, 255, 255]
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1 A0000U 15025K   21275.32949929  .08902710  12203-4  40481-3 0  9992",
+                    "line2": "2 A0000  54.9770 217.1272 0004880 292.7687  67.2870 16.43127108117791"
+                  }
+                },
+                "name": "Name-100000",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 4,
+                "fovId": "2",
+                "id": 4
+              },
+              {
+                "key": "3e3d1dd2-bc08-45b2-ba6b-fc406f3d078c",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "id": 5,
+                  "satId": 5,
+                  "color": [0, 255, 0],
+                  "satName": "123456789012",
+                  "fovs": [
+                    {
+                      "fovId": "ISS",
+                      "fovEnum": "cone",
+                      "azAngle": 0,
+                      "maxFovAngle": 10,
+                      "minFovAngle": 0,
+                      "color": [0, 255, 255]
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1 F5544U 98067A   21276.89473315 -.00000550  00000-0 -18204-5 0  9990",
+                    "line2": "2 F5544  51.6447 165.2224 0003972  50.6918  52.2957 15.48913182305449"
+                  }
+                },
+                "name": "123456789012",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 5,
+                "fovId": "ISS",
+                "id": 5
+              },
+              {
+                "key": "bed1f162-4778-4a81-b018-41bbe7b7d0ac",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "id": 6,
+                  "satId": 7,
+                  "color": [0, 255, 0],
+                  "satName": "Name-1234567890",
+                  "fovs": [
+                    {
+                      "fovId": "11",
+                      "fovEnum": "butterfly",
+                      "azAngle": 20,
+                      "maxFovAngle": 10,
+                      "minFovAngle": 0,
+                      "color": [255, 255, 0]
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1    50U 60009B   21276.54756237 -.00000038 +00000-0 +43703-3 0 09999",
+                    "line2": "2    50 047.2307 092.9406 0113455 295.6503 063.2604 12.20116695727986"
+                  }
+                },
+                "name": "Name-1234567890",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 6,
+                "fovId": "Ikonos 1",
+                "id": 6
+              }
+            ]
+          },
+          {
+            "key": "a35d555d-8a0a-4a57-9e30-742444d9aaf8",
+            "fov": true,
+            "orb": true,
+            "gnd": true,
+            "sky": false,
+            "show": true,
+            "data": null,
+            "name": "Russia",
+            "nodeType": "group",
+            "children": [
+              {
+                "key": "32bdd394-2d96-4e30-8758-84a7b29acc39",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "name": "Look Angle Sats",
+                  "groups": [
+                    {
+                      "name": "Asia",
+                      "groups": [
+                        {
+                          "name": "Siberia",
+                          "groups": [],
+                          "members": [
+                            { "satId": 4, "fovId": "2" },
+                            { "satId": 5, "fovId": "ISS" }
+                          ]
+                        },
+                        {
+                          "name": "Tunguska",
+                          "groups": [],
+                          "members": [
+                            { "satId": 4, "fovId": "2" },
+                            { "satId": 5, "fovId": "ISS" }
+                          ]
+                        }
+                      ],
+                      "members": [
+                        { "satId": 7, "fovId": "11" },
+                        { "satId": 8, "fovId": "12" }
+                      ]
+                    }
+                  ],
+                  "members": [
+                    { "satId": 4, "fovId": "2" },
+                    { "satId": 5, "fovId": "ISS" },
+                    { "satId": 6, "fovId": "Ikonos 1" }
+                  ]
+                },
+                "name": "Look Angle Sats",
+                "nodeType": "group",
+                "children": [
+                  {
+                    "key": "0a3083a2-6750-4a92-9f94-2a67e1fc743b",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "name": "Asia",
+                      "groups": [
+                        {
+                          "name": "Siberia",
+                          "groups": [],
+                          "members": [
+                            { "satId": 4, "fovId": "2" },
+                            { "satId": 5, "fovId": "ISS" }
+                          ]
+                        },
+                        {
+                          "name": "Tunguska",
+                          "groups": [],
+                          "members": [
+                            { "satId": 4, "fovId": "2" },
+                            { "satId": 5, "fovId": "ISS" }
+                          ]
+                        }
+                      ],
+                      "members": [
+                        { "satId": 7, "fovId": "11" },
+                        { "satId": 8, "fovId": "12" }
+                      ]
+                    },
+                    "name": "Asia",
+                    "nodeType": "group",
+                    "children": [
+                      {
+                        "key": "ed3924bf-1564-4e2e-ba48-8be42eacd928",
+                        "fov": true,
+                        "orb": true,
+                        "gnd": true,
+                        "sky": false,
+                        "show": true,
+                        "data": {
+                          "name": "Siberia",
+                          "groups": [],
+                          "members": [
+                            { "satId": 4, "fovId": "2" },
+                            { "satId": 5, "fovId": "ISS" }
+                          ]
+                        },
+                        "name": "Siberia",
+                        "nodeType": "group",
+                        "children": [
+                          {
+                            "key": "6d1db415-544a-4e81-bfe7-c127f40cada2",
+                            "fov": true,
+                            "orb": true,
+                            "gnd": true,
+                            "sky": false,
+                            "show": true,
+                            "data": {
+                              "id": 4,
+                              "satId": 2,
+                              "color": [0, 255, 0],
+                              "satName": "Name-100000",
+                              "fovs": [
+                                {
+                                  "fovId": "33318",
+                                  "fovEnum": "cone",
+                                  "azAngle": null,
+                                  "maxFovAngle": 10,
+                                  "minFovAngle": 0,
+                                  "color": [255, 255, 255]
+                                }
+                              ],
+                              "propObject": {
+                                "line1": "1 A0000U 15025K   21275.32949929  .08902710  12203-4  40481-3 0  9992",
+                                "line2": "2 A0000  54.9770 217.1272 0004880 292.7687  67.2870 16.43127108117791"
+                              },
+                              "key": "55860c98-93e6-411e-ad36-84aa01697dcd",
+                              "selected": true
+                            },
+                            "name": "Name-100000",
+                            "nodeType": "satellite",
+                            "children": [],
+                            "satId": 4,
+                            "fovId": "2",
+                            "id": 4
+                          },
+                          {
+                            "key": "fde2d29f-33db-4267-b7a2-c97e72350849",
+                            "fov": true,
+                            "orb": true,
+                            "gnd": true,
+                            "sky": false,
+                            "show": true,
+                            "data": {
+                              "id": 5,
+                              "satId": 5,
+                              "color": [0, 255, 0],
+                              "satName": "123456789012",
+                              "fovs": [
+                                {
+                                  "fovId": "ISS",
+                                  "fovEnum": "cone",
+                                  "azAngle": 0,
+                                  "maxFovAngle": 10,
+                                  "minFovAngle": 0,
+                                  "color": [0, 255, 255]
+                                }
+                              ],
+                              "propObject": {
+                                "line1": "1 F5544U 98067A   21276.89473315 -.00000550  00000-0 -18204-5 0  9990",
+                                "line2": "2 F5544  51.6447 165.2224 0003972  50.6918  52.2957 15.48913182305449"
+                              },
+                              "key": "3e3d1dd2-bc08-45b2-ba6b-fc406f3d078c",
+                              "selected": true
+                            },
+                            "name": "123456789012",
+                            "nodeType": "satellite",
+                            "children": [],
+                            "satId": 5,
+                            "fovId": "ISS",
+                            "id": 5
+                          }
+                        ]
+                      },
+                      {
+                        "key": "015cef62-a283-48a5-b0e7-3b2afef035c7",
+                        "fov": true,
+                        "orb": true,
+                        "gnd": true,
+                        "sky": false,
+                        "show": true,
+                        "data": {
+                          "name": "Tunguska",
+                          "groups": [],
+                          "members": [
+                            { "satId": 4, "fovId": "2" },
+                            { "satId": 5, "fovId": "ISS" }
+                          ]
+                        },
+                        "name": "Tunguska",
+                        "nodeType": "group",
+                        "children": [
+                          {
+                            "key": "5253d2a2-4609-45f0-a3e4-719eaf381680",
+                            "fov": true,
+                            "orb": true,
+                            "gnd": true,
+                            "sky": false,
+                            "show": true,
+                            "data": {
+                              "id": 4,
+                              "satId": 2,
+                              "color": [0, 255, 0],
+                              "satName": "Name-100000",
+                              "fovs": [
+                                {
+                                  "fovId": "33318",
+                                  "fovEnum": "cone",
+                                  "azAngle": null,
+                                  "maxFovAngle": 10,
+                                  "minFovAngle": 0,
+                                  "color": [255, 255, 255]
+                                }
+                              ],
+                              "propObject": {
+                                "line1": "1 A0000U 15025K   21275.32949929  .08902710  12203-4  40481-3 0  9992",
+                                "line2": "2 A0000  54.9770 217.1272 0004880 292.7687  67.2870 16.43127108117791"
+                              },
+                              "key": "6d1db415-544a-4e81-bfe7-c127f40cada2",
+                              "selected": true
+                            },
+                            "name": "Name-100000",
+                            "nodeType": "satellite",
+                            "children": [],
+                            "satId": 4,
+                            "fovId": "2",
+                            "id": 4
+                          },
+                          {
+                            "key": "cb9d9760-408c-4bf8-86b6-e06830f50161",
+                            "fov": true,
+                            "orb": true,
+                            "gnd": true,
+                            "sky": false,
+                            "show": true,
+                            "data": {
+                              "id": 5,
+                              "satId": 5,
+                              "color": [0, 255, 0],
+                              "satName": "123456789012",
+                              "fovs": [
+                                {
+                                  "fovId": "ISS",
+                                  "fovEnum": "cone",
+                                  "azAngle": 0,
+                                  "maxFovAngle": 10,
+                                  "minFovAngle": 0,
+                                  "color": [0, 255, 255]
+                                }
+                              ],
+                              "propObject": {
+                                "line1": "1 F5544U 98067A   21276.89473315 -.00000550  00000-0 -18204-5 0  9990",
+                                "line2": "2 F5544  51.6447 165.2224 0003972  50.6918  52.2957 15.48913182305449"
+                              },
+                              "key": "fde2d29f-33db-4267-b7a2-c97e72350849",
+                              "selected": true
+                            },
+                            "name": "123456789012",
+                            "nodeType": "satellite",
+                            "children": [],
+                            "satId": 5,
+                            "fovId": "ISS",
+                            "id": 5
+                          }
+                        ]
+                      },
+                      {
+                        "key": "3dbb1f85-ca86-4adc-9dc7-d50b19c6702f",
+                        "fov": true,
+                        "orb": true,
+                        "gnd": true,
+                        "sky": false,
+                        "show": true,
+                        "data": {
+                          "id": 7,
+                          "satId": 8,
+                          "color": [0, 255, 0],
+                          "satName": "Name-1234567890",
+                          "fovs": [
+                            {
+                              "fovId": "12",
+                              "fovEnum": "cone",
+                              "azAngle": 0,
+                              "maxFovAngle": 10,
+                              "minFovAngle": 0,
+                              "color": [255, 255, 255]
+                            }
+                          ],
+                          "propObject": {
+                            "line1": "1 00051U 60009C   21276.52738118 -.00000108 +00000-0 -22153-3 0 09991",
+                            "line2": "2 00051 047.2142 323.8485 0106309 130.5653 230.4447 12.18273166721767"
+                          }
+                        },
+                        "name": "Name-1234567890",
+                        "nodeType": "satellite",
+                        "children": [],
+                        "satId": 7,
+                        "fovId": "11",
+                        "id": 7
+                      },
+                      {
+                        "key": "06a030d3-818e-46e9-bf9c-7a519e83ae99",
+                        "fov": true,
+                        "orb": true,
+                        "gnd": true,
+                        "sky": false,
+                        "show": true,
+                        "data": {
+                          "id": 8,
+                          "satId": 9,
+                          "color": [0, 255, 0],
+                          "satName": "Sat53",
+                          "fovs": [
+                            {
+                              "fovId": "13",
+                              "fovEnum": "butterfly",
+                              "azAngle": 20,
+                              "maxFovAngle": 10,
+                              "minFovAngle": 0,
+                              "color": [255, 255, 255]
+                            }
+                          ],
+                          "propObject": {
+                            "line1": "1    53U 60009E   21276.38526025 +.00000017 +00000-0 +10088-2 0 09999",
+                            "line2": "2    53 047.2748 240.5323 0098712 037.5859 323.1778 12.17261913726172"
+                          }
+                        },
+                        "name": "Sat53",
+                        "nodeType": "satellite",
+                        "children": [],
+                        "satId": 8,
+                        "fovId": "12",
+                        "id": 8
+                      }
+                    ]
+                  },
+                  {
+                    "key": "dacb3d26-7e4d-4833-8efb-6ade15a291a1",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 4,
+                      "satId": 2,
+                      "color": [0, 255, 0],
+                      "satName": "Name-100000",
+                      "fovs": [
+                        {
+                          "fovId": "33318",
+                          "fovEnum": "cone",
+                          "azAngle": null,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 A0000U 15025K   21275.32949929  .08902710  12203-4  40481-3 0  9992",
+                        "line2": "2 A0000  54.9770 217.1272 0004880 292.7687  67.2870 16.43127108117791"
+                      },
+                      "key": "5253d2a2-4609-45f0-a3e4-719eaf381680",
+                      "selected": true
+                    },
+                    "name": "Name-100000",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 4,
+                    "fovId": "2",
+                    "id": 4
+                  },
+                  {
+                    "key": "7dc353fa-dc81-4e7d-b67e-61a9ee1a8441",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 5,
+                      "satId": 5,
+                      "color": [0, 255, 0],
+                      "satName": "123456789012",
+                      "fovs": [
+                        {
+                          "fovId": "ISS",
+                          "fovEnum": "cone",
+                          "azAngle": 0,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [0, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 F5544U 98067A   21276.89473315 -.00000550  00000-0 -18204-5 0  9990",
+                        "line2": "2 F5544  51.6447 165.2224 0003972  50.6918  52.2957 15.48913182305449"
+                      },
+                      "key": "cb9d9760-408c-4bf8-86b6-e06830f50161",
+                      "selected": true
+                    },
+                    "name": "123456789012",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 5,
+                    "fovId": "ISS",
+                    "id": 5
+                  },
+                  {
+                    "key": "e043e27e-0ba8-43d6-ba16-7092bf1be07d",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 6,
+                      "satId": 7,
+                      "color": [0, 255, 0],
+                      "satName": "Name-1234567890",
+                      "fovs": [
+                        {
+                          "fovId": "11",
+                          "fovEnum": "butterfly",
+                          "azAngle": 20,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 0]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1    50U 60009B   21276.54756237 -.00000038 +00000-0 +43703-3 0 09999",
+                        "line2": "2    50 047.2307 092.9406 0113455 295.6503 063.2604 12.20116695727986"
+                      },
+                      "key": "bed1f162-4778-4a81-b018-41bbe7b7d0ac",
+                      "selected": true
+                    },
+                    "name": "Name-1234567890",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 6,
+                    "fovId": "Ikonos 1",
+                    "id": 6
+                  }
+                ]
+              },
+              {
+                "key": "2ababc68-2e72-46a2-bc28-80092fe23316",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "name": "Group53",
+                  "groups": [],
+                  "members": [
+                    { "satId": 7, "fovId": "11" },
+                    { "satId": 8, "fovId": "12" },
+                    { "satId": 9, "fovId": "13" },
+                    { "satId": 10, "fovId": "14" }
+                  ]
+                },
+                "name": "Group53",
+                "nodeType": "group",
+                "children": [
+                  {
+                    "key": "4c62c7aa-09c8-4d22-a390-05db646656f7",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 7,
+                      "satId": 8,
+                      "color": [0, 255, 0],
+                      "satName": "Name-1234567890",
+                      "fovs": [
+                        {
+                          "fovId": "12",
+                          "fovEnum": "cone",
+                          "azAngle": 0,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 00051U 60009C   21276.52738118 -.00000108 +00000-0 -22153-3 0 09991",
+                        "line2": "2 00051 047.2142 323.8485 0106309 130.5653 230.4447 12.18273166721767"
+                      },
+                      "key": "3dbb1f85-ca86-4adc-9dc7-d50b19c6702f",
+                      "selected": true
+                    },
+                    "name": "Name-1234567890",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 7,
+                    "fovId": "11",
+                    "id": 7
+                  },
+                  {
+                    "key": "6af77e23-0f19-4560-a03c-8f2282346147",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 8,
+                      "satId": 9,
+                      "color": [0, 255, 0],
+                      "satName": "Sat53",
+                      "fovs": [
+                        {
+                          "fovId": "13",
+                          "fovEnum": "butterfly",
+                          "azAngle": 20,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1    53U 60009E   21276.38526025 +.00000017 +00000-0 +10088-2 0 09999",
+                        "line2": "2    53 047.2748 240.5323 0098712 037.5859 323.1778 12.17261913726172"
+                      },
+                      "key": "06a030d3-818e-46e9-bf9c-7a519e83ae99",
+                      "selected": true
+                    },
+                    "name": "Sat53",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 8,
+                    "fovId": "12",
+                    "id": 8
+                  },
+                  {
+                    "key": "740e9f7b-0a50-440d-ba83-5aa1fb8722df",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 9,
+                      "satId": 10,
+                      "color": [0, 255, 0],
+                      "satName": "Name-1234567890",
+                      "fovs": [
+                        {
+                          "fovId": "14",
+                          "fovEnum": "cone",
+                          "azAngle": 0,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 00058U 60013A   21276.49981513 +.00000087 +00000-0 +61999-5 0 09995",
+                        "line2": "2 00058 028.3263 214.7364 0164954 025.7056 335.1583 13.46328478002400"
+                      }
+                    },
+                    "name": "Name-1234567890",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 9,
+                    "fovId": "13",
+                    "id": 9
+                  },
+                  {
+                    "key": "dcf9f3d1-9972-4e53-84c1-af96ee5e29da",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 10,
+                      "satId": 3,
+                      "color": [0, 255, 0],
+                      "satName": "Name-1234567890",
+                      "fovs": [
+                        {
+                          "fovId": "15",
+                          "fovEnum": "butterfly",
+                          "azAngle": 20,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 T0059U 60013B   21276.42247485 +.00000132 +00000-0 +56608-4 0 09993",
+                        "line2": "2 T0059 028.2502 308.6535 0189105 296.0078 062.1105 13.52987998010345"
+                      }
+                    },
+                    "name": "Name-1234567890",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 10,
+                    "fovId": "14",
+                    "id": 10
+                  }
+                ]
+              },
+              {
+                "key": "9934b73c-1fe5-4f79-87c8-fce26cd3d648",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "id": 7,
+                  "satId": 8,
+                  "color": [0, 255, 0],
+                  "satName": "Name-1234567890",
+                  "fovs": [
+                    {
+                      "fovId": "12",
+                      "fovEnum": "cone",
+                      "azAngle": 0,
+                      "maxFovAngle": 10,
+                      "minFovAngle": 0,
+                      "color": [255, 255, 255]
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1 00051U 60009C   21276.52738118 -.00000108 +00000-0 -22153-3 0 09991",
+                    "line2": "2 00051 047.2142 323.8485 0106309 130.5653 230.4447 12.18273166721767"
+                  },
+                  "key": "4c62c7aa-09c8-4d22-a390-05db646656f7",
+                  "selected": true
+                },
+                "name": "Name-1234567890",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 7,
+                "fovId": "11",
+                "id": 7
+              },
+              {
+                "key": "e8787051-dcd4-4090-bc76-80d7f2bfe7f6",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "id": 8,
+                  "satId": 9,
+                  "color": [0, 255, 0],
+                  "satName": "Sat53",
+                  "fovs": [
+                    {
+                      "fovId": "13",
+                      "fovEnum": "butterfly",
+                      "azAngle": 20,
+                      "maxFovAngle": 10,
+                      "minFovAngle": 0,
+                      "color": [255, 255, 255]
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1    53U 60009E   21276.38526025 +.00000017 +00000-0 +10088-2 0 09999",
+                    "line2": "2    53 047.2748 240.5323 0098712 037.5859 323.1778 12.17261913726172"
+                  },
+                  "key": "6af77e23-0f19-4560-a03c-8f2282346147",
+                  "selected": true
+                },
+                "name": "Sat53",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 8,
+                "fovId": "12",
+                "id": 8
+              }
+            ]
+          },
+          {
+            "key": "f97b049a-da29-4b83-a106-a0c44cae350b",
+            "fov": true,
+            "orb": true,
+            "gnd": true,
+            "sky": false,
+            "show": true,
+            "data": null,
+            "name": "JPN",
+            "nodeType": "group",
+            "children": [
+              {
+                "key": "48e2af04-a017-494c-84ac-91b460335993",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "name": "Look Angle Sats",
+                  "groups": [],
+                  "members": [
+                    { "satId": 4, "fovId": "2" },
+                    { "satId": 5, "fovId": "ISS" },
+                    { "satId": 6, "fovId": "Ikonos 1" }
+                  ]
+                },
+                "name": "Look Angle Sats",
+                "nodeType": "group",
+                "children": [
+                  {
+                    "key": "b793d429-62aa-4ead-873d-827d4297d654",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 4,
+                      "satId": 2,
+                      "color": [0, 255, 0],
+                      "satName": "Name-100000",
+                      "fovs": [
+                        {
+                          "fovId": "33318",
+                          "fovEnum": "cone",
+                          "azAngle": null,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 A0000U 15025K   21275.32949929  .08902710  12203-4  40481-3 0  9992",
+                        "line2": "2 A0000  54.9770 217.1272 0004880 292.7687  67.2870 16.43127108117791"
+                      },
+                      "key": "dacb3d26-7e4d-4833-8efb-6ade15a291a1",
+                      "selected": true
+                    },
+                    "name": "Name-100000",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 4,
+                    "fovId": "2",
+                    "id": 4
+                  },
+                  {
+                    "key": "c9bc865f-34dc-487e-98c0-cc6b3940bc81",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 5,
+                      "satId": 5,
+                      "color": [0, 255, 0],
+                      "satName": "123456789012",
+                      "fovs": [
+                        {
+                          "fovId": "ISS",
+                          "fovEnum": "cone",
+                          "azAngle": 0,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [0, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 F5544U 98067A   21276.89473315 -.00000550  00000-0 -18204-5 0  9990",
+                        "line2": "2 F5544  51.6447 165.2224 0003972  50.6918  52.2957 15.48913182305449"
+                      },
+                      "key": "7dc353fa-dc81-4e7d-b67e-61a9ee1a8441",
+                      "selected": true
+                    },
+                    "name": "123456789012",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 5,
+                    "fovId": "ISS",
+                    "id": 5
+                  },
+                  {
+                    "key": "2e92ed02-de7c-484b-9863-0dbbd2583c29",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 6,
+                      "satId": 7,
+                      "color": [0, 255, 0],
+                      "satName": "Name-1234567890",
+                      "fovs": [
+                        {
+                          "fovId": "11",
+                          "fovEnum": "butterfly",
+                          "azAngle": 20,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 0]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1    50U 60009B   21276.54756237 -.00000038 +00000-0 +43703-3 0 09999",
+                        "line2": "2    50 047.2307 092.9406 0113455 295.6503 063.2604 12.20116695727986"
+                      },
+                      "key": "e043e27e-0ba8-43d6-ba16-7092bf1be07d",
+                      "selected": true
+                    },
+                    "name": "Name-1234567890",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 6,
+                    "fovId": "Ikonos 1",
+                    "id": 6
+                  }
+                ]
+              },
+              {
+                "key": "d3499162-e85b-431c-884d-7f20d553533d",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "name": "50s Range",
+                  "groups": [],
+                  "members": [
+                    { "satId": 7, "fovId": "11" },
+                    { "satId": 8, "fovId": "12" },
+                    { "satId": 9, "fovId": "13" },
+                    { "satId": 10, "fovId": "14" }
+                  ]
+                },
+                "name": "50s Range",
+                "nodeType": "group",
+                "children": [
+                  {
+                    "key": "5fe53e56-1402-4c1e-951e-763d10ec4f01",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 7,
+                      "satId": 8,
+                      "color": [0, 255, 0],
+                      "satName": "Name-1234567890",
+                      "fovs": [
+                        {
+                          "fovId": "12",
+                          "fovEnum": "cone",
+                          "azAngle": 0,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 00051U 60009C   21276.52738118 -.00000108 +00000-0 -22153-3 0 09991",
+                        "line2": "2 00051 047.2142 323.8485 0106309 130.5653 230.4447 12.18273166721767"
+                      },
+                      "key": "9934b73c-1fe5-4f79-87c8-fce26cd3d648",
+                      "selected": true
+                    },
+                    "name": "Name-1234567890",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 7,
+                    "fovId": "11",
+                    "id": 7
+                  },
+                  {
+                    "key": "270bde44-806a-4516-b52c-f6a343b340cf",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 8,
+                      "satId": 9,
+                      "color": [0, 255, 0],
+                      "satName": "Sat53",
+                      "fovs": [
+                        {
+                          "fovId": "13",
+                          "fovEnum": "butterfly",
+                          "azAngle": 20,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1    53U 60009E   21276.38526025 +.00000017 +00000-0 +10088-2 0 09999",
+                        "line2": "2    53 047.2748 240.5323 0098712 037.5859 323.1778 12.17261913726172"
+                      },
+                      "key": "e8787051-dcd4-4090-bc76-80d7f2bfe7f6",
+                      "selected": true
+                    },
+                    "name": "Sat53",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 8,
+                    "fovId": "12",
+                    "id": 8
+                  },
+                  {
+                    "key": "a2d01039-0acc-4208-9fc1-d37ebcf037ea",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 9,
+                      "satId": 10,
+                      "color": [0, 255, 0],
+                      "satName": "Name-1234567890",
+                      "fovs": [
+                        {
+                          "fovId": "14",
+                          "fovEnum": "cone",
+                          "azAngle": 0,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 00058U 60013A   21276.49981513 +.00000087 +00000-0 +61999-5 0 09995",
+                        "line2": "2 00058 028.3263 214.7364 0164954 025.7056 335.1583 13.46328478002400"
+                      },
+                      "key": "740e9f7b-0a50-440d-ba83-5aa1fb8722df",
+                      "selected": true
+                    },
+                    "name": "Name-1234567890",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 9,
+                    "fovId": "13",
+                    "id": 9
+                  },
+                  {
+                    "key": "74718907-cc82-4fc8-9297-dcc10a5acf2b",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 10,
+                      "satId": 3,
+                      "color": [0, 255, 0],
+                      "satName": "Name-1234567890",
+                      "fovs": [
+                        {
+                          "fovId": "15",
+                          "fovEnum": "butterfly",
+                          "azAngle": 20,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 T0059U 60013B   21276.42247485 +.00000132 +00000-0 +56608-4 0 09993",
+                        "line2": "2 T0059 028.2502 308.6535 0189105 296.0078 062.1105 13.52987998010345"
+                      },
+                      "key": "dcf9f3d1-9972-4e53-84c1-af96ee5e29da",
+                      "selected": true
+                    },
+                    "name": "Name-1234567890",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 10,
+                    "fovId": "14",
+                    "id": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "60f4e846-3415-42b5-b777-63b040057912",
+            "fov": true,
+            "orb": true,
+            "gnd": true,
+            "sky": false,
+            "show": true,
+            "data": null,
+            "name": "AUS",
+            "nodeType": "group",
+            "children": [
+              {
+                "key": "e41d84d0-5aae-4b0b-9ab1-5e189c8719e8",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "name": "Look Angle Sats",
+                  "groups": [],
+                  "members": [
+                    { "satId": 4, "fovId": "2" },
+                    { "satId": 5, "fovId": "ISS" },
+                    { "satId": 6, "fovId": "Ikonos 1" }
+                  ]
+                },
+                "name": "Look Angle Sats",
+                "nodeType": "group",
+                "children": [
+                  {
+                    "key": "63f54721-cc61-44df-9f2e-5bb3823fd71f",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 4,
+                      "satId": 2,
+                      "color": [0, 255, 0],
+                      "satName": "Name-100000",
+                      "fovs": [
+                        {
+                          "fovId": "33318",
+                          "fovEnum": "cone",
+                          "azAngle": null,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 A0000U 15025K   21275.32949929  .08902710  12203-4  40481-3 0  9992",
+                        "line2": "2 A0000  54.9770 217.1272 0004880 292.7687  67.2870 16.43127108117791"
+                      },
+                      "key": "b793d429-62aa-4ead-873d-827d4297d654",
+                      "selected": true
+                    },
+                    "name": "Name-100000",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 4,
+                    "fovId": "2",
+                    "id": 4
+                  },
+                  {
+                    "key": "016d6ade-0ac5-4f01-895d-9c7ff9fe2d11",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 5,
+                      "satId": 5,
+                      "color": [0, 255, 0],
+                      "satName": "123456789012",
+                      "fovs": [
+                        {
+                          "fovId": "ISS",
+                          "fovEnum": "cone",
+                          "azAngle": 0,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [0, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 F5544U 98067A   21276.89473315 -.00000550  00000-0 -18204-5 0  9990",
+                        "line2": "2 F5544  51.6447 165.2224 0003972  50.6918  52.2957 15.48913182305449"
+                      },
+                      "key": "c9bc865f-34dc-487e-98c0-cc6b3940bc81",
+                      "selected": true
+                    },
+                    "name": "123456789012",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 5,
+                    "fovId": "ISS",
+                    "id": 5
+                  },
+                  {
+                    "key": "f558a6cf-24e3-43a0-b5cc-37f1366ff59e",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 6,
+                      "satId": 7,
+                      "color": [0, 255, 0],
+                      "satName": "Name-1234567890",
+                      "fovs": [
+                        {
+                          "fovId": "11",
+                          "fovEnum": "butterfly",
+                          "azAngle": 20,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 0]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1    50U 60009B   21276.54756237 -.00000038 +00000-0 +43703-3 0 09999",
+                        "line2": "2    50 047.2307 092.9406 0113455 295.6503 063.2604 12.20116695727986"
+                      },
+                      "key": "2e92ed02-de7c-484b-9863-0dbbd2583c29",
+                      "selected": true
+                    },
+                    "name": "Name-1234567890",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 6,
+                    "fovId": "Ikonos 1",
+                    "id": 6
+                  }
+                ]
+              },
+              {
+                "key": "0241625f-2db4-4199-b161-ed68f06596a3",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "name": "50s Range",
+                  "groups": [],
+                  "members": [
+                    { "satId": 7, "fovId": "11" },
+                    { "satId": 8, "fovId": "12" },
+                    { "satId": 9, "fovId": "13" },
+                    { "satId": 10, "fovId": "14" }
+                  ]
+                },
+                "name": "50s Range",
+                "nodeType": "group",
+                "children": [
+                  {
+                    "key": "e0d124e6-b134-476e-9a60-61a9301af283",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 7,
+                      "satId": 8,
+                      "color": [0, 255, 0],
+                      "satName": "Name-1234567890",
+                      "fovs": [
+                        {
+                          "fovId": "12",
+                          "fovEnum": "cone",
+                          "azAngle": 0,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 00051U 60009C   21276.52738118 -.00000108 +00000-0 -22153-3 0 09991",
+                        "line2": "2 00051 047.2142 323.8485 0106309 130.5653 230.4447 12.18273166721767"
+                      },
+                      "key": "5fe53e56-1402-4c1e-951e-763d10ec4f01",
+                      "selected": true
+                    },
+                    "name": "Name-1234567890",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 7,
+                    "fovId": "11",
+                    "id": 7
+                  },
+                  {
+                    "key": "c0193206-6e43-4e3a-8cad-a6e5b65a9116",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 8,
+                      "satId": 9,
+                      "color": [0, 255, 0],
+                      "satName": "Sat53",
+                      "fovs": [
+                        {
+                          "fovId": "13",
+                          "fovEnum": "butterfly",
+                          "azAngle": 20,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1    53U 60009E   21276.38526025 +.00000017 +00000-0 +10088-2 0 09999",
+                        "line2": "2    53 047.2748 240.5323 0098712 037.5859 323.1778 12.17261913726172"
+                      },
+                      "key": "270bde44-806a-4516-b52c-f6a343b340cf",
+                      "selected": true
+                    },
+                    "name": "Sat53",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 8,
+                    "fovId": "12",
+                    "id": 8
+                  },
+                  {
+                    "key": "2ba862f4-daf7-44ae-9768-513959e2d829",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 9,
+                      "satId": 10,
+                      "color": [0, 255, 0],
+                      "satName": "Name-1234567890",
+                      "fovs": [
+                        {
+                          "fovId": "14",
+                          "fovEnum": "cone",
+                          "azAngle": 0,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 00058U 60013A   21276.49981513 +.00000087 +00000-0 +61999-5 0 09995",
+                        "line2": "2 00058 028.3263 214.7364 0164954 025.7056 335.1583 13.46328478002400"
+                      },
+                      "key": "a2d01039-0acc-4208-9fc1-d37ebcf037ea",
+                      "selected": true
+                    },
+                    "name": "Name-1234567890",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 9,
+                    "fovId": "13",
+                    "id": 9
+                  },
+                  {
+                    "key": "91ed483a-a55d-4ef4-b361-10c2209f5e3b",
+                    "fov": true,
+                    "orb": true,
+                    "gnd": true,
+                    "sky": false,
+                    "show": true,
+                    "data": {
+                      "id": 10,
+                      "satId": 3,
+                      "color": [0, 255, 0],
+                      "satName": "Name-1234567890",
+                      "fovs": [
+                        {
+                          "fovId": "15",
+                          "fovEnum": "butterfly",
+                          "azAngle": 20,
+                          "maxFovAngle": 10,
+                          "minFovAngle": 0,
+                          "color": [255, 255, 255]
+                        }
+                      ],
+                      "propObject": {
+                        "line1": "1 T0059U 60013B   21276.42247485 +.00000132 +00000-0 +56608-4 0 09993",
+                        "line2": "2 T0059 028.2502 308.6535 0189105 296.0078 062.1105 13.52987998010345"
+                      },
+                      "key": "74718907-cc82-4fc8-9297-dcc10a5acf2b",
+                      "selected": true
+                    },
+                    "name": "Name-1234567890",
+                    "nodeType": "satellite",
+                    "children": [],
+                    "satId": 10,
+                    "fovId": "14",
+                    "id": 10
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "fov": true,
+        "orb": true,
+        "gnd": true,
+        "sky": false,
+        "show": true,
+        "name": "Satellites by Country",
+        "nodeType": "viewByType",
+        "key": "b9eb7170-7d18-4aa5-9923-8cc35835ce20"
+      },
+      {
+        "children": [
+          {
+            "key": "c82863a9-cada-4885-a4a8-a93289a2a7b7",
+            "fov": true,
+            "orb": true,
+            "gnd": true,
+            "sky": false,
+            "show": true,
+            "data": null,
+            "name": "LEO",
+            "nodeType": "group",
+            "children": [
+              {
+                "key": "fe108a57-033d-4412-bd87-075b313a80b5",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "id": 5,
+                  "satId": 5,
+                  "color": [0, 255, 0],
+                  "satName": "123456789012",
+                  "fovs": [
+                    {
+                      "fovId": "ISS",
+                      "fovEnum": "cone",
+                      "azAngle": 0,
+                      "maxFovAngle": 10,
+                      "minFovAngle": 0,
+                      "color": [0, 255, 255]
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1 F5544U 98067A   21276.89473315 -.00000550  00000-0 -18204-5 0  9990",
+                    "line2": "2 F5544  51.6447 165.2224 0003972  50.6918  52.2957 15.48913182305449"
+                  },
+                  "key": "016d6ade-0ac5-4f01-895d-9c7ff9fe2d11",
+                  "selected": true
+                },
+                "name": "123456789012",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 5,
+                "fovId": "ISS",
+                "id": 5
+              },
+              {
+                "key": "0205a2dc-d93b-4bc2-b6ef-2ca0f8ecb7ac",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "id": 2,
+                  "satId": 4,
+                  "color": [200, 200, 10],
+                  "satName": "Name-1234567890",
+                  "orbitColor": [10, 88, 200],
+                  "fovs": [
+                    {
+                      "fovId": "2",
+                      "fovEnum": "cone",
+                      "azAngle": 0,
+                      "maxFovAngle": 10,
+                      "minFovAngle": 0,
+                      "color": [6, 87, 58]
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1 T0999U 59001B   21276.33263172 +.00000285 +00000-0 +17714-3 0 09991",
+                    "line2": "2 T0999 032.8956 136.3195 1663303 042.2944 329.4577 11.44393326334152"
+                  },
+                  "key": "b63156f4-2c67-454f-9203-04163427526c",
+                  "selected": true
+                },
+                "name": "Name-1234567890",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 2,
+                "fovId": "33318",
+                "id": 2
+              },
+              {
+                "key": "625a5bc4-9fa8-4116-8596-64b67c19585c",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "id": 6,
+                  "satId": 7,
+                  "color": [0, 255, 0],
+                  "satName": "Name-1234567890",
+                  "fovs": [
+                    {
+                      "fovId": "11",
+                      "fovEnum": "butterfly",
+                      "azAngle": 20,
+                      "maxFovAngle": 10,
+                      "minFovAngle": 0,
+                      "color": [255, 255, 0]
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1    50U 60009B   21276.54756237 -.00000038 +00000-0 +43703-3 0 09999",
+                    "line2": "2    50 047.2307 092.9406 0113455 295.6503 063.2604 12.20116695727986"
+                  },
+                  "key": "f558a6cf-24e3-43a0-b5cc-37f1366ff59e",
+                  "selected": true
+                },
+                "name": "Name-1234567890",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 6,
+                "fovId": "Ikonos 2",
+                "id": 6
+              }
+            ]
+          },
+          {
+            "key": "2c2811c9-f1ca-4b59-a10f-0c8f844ba7f7",
+            "fov": true,
+            "orb": true,
+            "gnd": true,
+            "sky": false,
+            "show": true,
+            "data": null,
+            "name": "GEO",
+            "nodeType": "group",
+            "children": [
+              {
+                "key": "dc7ea3c2-6b95-4ea9-ab43-d1cd4adb7978",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "id": 5,
+                  "satId": 5,
+                  "color": [0, 255, 0],
+                  "satName": "123456789012",
+                  "fovs": [
+                    {
+                      "fovId": "ISS",
+                      "fovEnum": "cone",
+                      "azAngle": 0,
+                      "maxFovAngle": 10,
+                      "minFovAngle": 0,
+                      "color": [0, 255, 255]
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1 F5544U 98067A   21276.89473315 -.00000550  00000-0 -18204-5 0  9990",
+                    "line2": "2 F5544  51.6447 165.2224 0003972  50.6918  52.2957 15.48913182305449"
+                  },
+                  "key": "fe108a57-033d-4412-bd87-075b313a80b5",
+                  "selected": true
+                },
+                "name": "123456789012",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 5,
+                "fovId": "ISS",
+                "id": 5
+              },
+              {
+                "key": "05a7cd11-337d-4d9c-ae2d-8f5d15d58cea",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "id": 6,
+                  "satId": 7,
+                  "color": [0, 255, 0],
+                  "satName": "Name-1234567890",
+                  "fovs": [
+                    {
+                      "fovId": "11",
+                      "fovEnum": "butterfly",
+                      "azAngle": 20,
+                      "maxFovAngle": 10,
+                      "minFovAngle": 0,
+                      "color": [255, 255, 0]
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1    50U 60009B   21276.54756237 -.00000038 +00000-0 +43703-3 0 09999",
+                    "line2": "2    50 047.2307 092.9406 0113455 295.6503 063.2604 12.20116695727986"
+                  },
+                  "key": "625a5bc4-9fa8-4116-8596-64b67c19585c",
+                  "selected": true
+                },
+                "name": "Name-1234567890",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 6,
+                "fovId": "Ikonos 2",
+                "id": 6
+              },
+              {
+                "key": "55207812-7003-4027-9d33-8289ba5f61ba",
+                "fov": true,
+                "orb": true,
+                "gnd": true,
+                "sky": false,
+                "show": true,
+                "data": {
+                  "id": 9,
+                  "satId": 10,
+                  "color": [0, 255, 0],
+                  "satName": "Name-1234567890",
+                  "fovs": [
+                    {
+                      "fovId": "14",
+                      "fovEnum": "cone",
+                      "azAngle": 0,
+                      "maxFovAngle": 10,
+                      "minFovAngle": 0,
+                      "color": [255, 255, 255]
+                    }
+                  ],
+                  "propObject": {
+                    "line1": "1 00058U 60013A   21276.49981513 +.00000087 +00000-0 +61999-5 0 09995",
+                    "line2": "2 00058 028.3263 214.7364 0164954 025.7056 335.1583 13.46328478002400"
+                  },
+                  "key": "2ba862f4-daf7-44ae-9768-513959e2d829",
+                  "selected": true
+                },
+                "name": "Name-1234567890",
+                "nodeType": "satellite",
+                "children": [],
+                "satId": 9,
+                "fovId": "13",
+                "id": 9
+              }
+            ]
+          }
+        ],
+        "fov": true,
+        "orb": true,
+        "gnd": true,
+        "sky": false,
+        "show": true,
+        "name": "Sats By Type",
+        "nodeType": "viewByType",
+        "key": "fb38bf9f-c3e3-479e-a373-27b88f367748"
+      }
+    ],
+    "fov": true,
+    "orb": true,
+    "gnd": true,
+    "sky": false,
+    "show": true,
+    "data": null,
+    "nodeType": "root"
+  }
+}
