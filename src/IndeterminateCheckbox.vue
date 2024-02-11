@@ -13,7 +13,7 @@ const inputRef = ref<any>(null)
 </script>
 
 <template>
-  <div class="mx-2 w-full flex align-items-center justify-content-between">
+  <div class="flex align-items-center ">
     <input
     type="checkbox"
     ref="inputRef"
@@ -21,7 +21,7 @@ const inputRef = ref<any>(null)
     :indeterminate="indeterminate"
     v-bind="$attrs"
     />
-    <span>
+    <span class="ml-2">
       {{ index }}
     </span>
   </div>

@@ -1,5 +1,5 @@
 import { createColumnHelper } from "@tanstack/vue-table";
-import  IndeterminateCheckbox  from "@/IndeterminateCheckbox.vue";
+import IndeterminateCheckbox from "@/IndeterminateCheckbox.vue";
 
 const columnHelper = createColumnHelper<Person>();
 export const mockColumns = [
@@ -16,49 +16,30 @@ export const mockColumns = [
     },
     cell: ({ row }: { row: any }) => {
       return (
-
-          <IndeterminateCheckbox
-            index={row.index}
-            checked={row.getIsSelected()}
-            disabled={!row.getCanSelect()}
-            onChange={row.getToggleSelectedHandler()}
-          ></IndeterminateCheckbox>
+        <IndeterminateCheckbox
+          index={row.index}
+          checked={row.getIsSelected()}
+          disabled={!row.getCanSelect()}
+          onChange={row.getToggleSelectedHandler()}
+        ></IndeterminateCheckbox>
       );
     },
   },
-  columnHelper.group({
-    header: "Name",
-    footer: (props) => props.column.id,
-    columns: [
-      columnHelper.accessor("firstName", {
-        cell: (info) => info.getValue(),
-        footer: (props) => props.column.id,
-      }),
-      columnHelper.accessor((row) => row.lastName, {
-        id: "lastName",
-        cell: (info) => info.getValue(),
-        header: () => "Last Name",
-        footer: (props) => props.column.id,
-      }),
-    ],
-  }),
-  columnHelper.group({
-    header: "Info",
-    footer: (props) => props.column.id,
-    columns: [
-      columnHelper.accessor("email", {
-        header: () => "Email",
-        footer: (props) => props.column.id,
-      }),
 
-          columnHelper.accessor("gender", {
-            header: () => "Gender",
-            footer: (props) => props.column.id,
-          }),
-          columnHelper.accessor("date", {
-            header: "Date",
-            footer: (props) => props.column.id,
-          }),
-        ],
-      }),
+  columnHelper.accessor("firstName", {
+    cell: (info) => info.getValue(),
+  }),
+  columnHelper.accessor("lastName", {
+    cell: (info) => info.getValue(),
+  }),
+  columnHelper.accessor("email", {
+    header: () => "Email",
+  }),
+
+  columnHelper.accessor("gender", {
+    header: () => "Gender",
+  }),
+  columnHelper.accessor("date", {
+    header: "Date",
+  }),
 ];

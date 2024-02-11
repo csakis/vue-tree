@@ -1,14 +1,11 @@
 <template>
   <div
     class="p-5 relative overflow-x-hidden"
-    style="height: 500px; width: 900px;"
-
+    style="height: 500px; width: 1000px"
     ref="tableContainer"
   >
     <table style="display: grid">
-      <thead
-      style="display: grid; position: 'sticky'; top: 0; zindex: 1"
-      >
+      <thead style="display: grid; position: &quot;sticky&quot;; top: 0; zindex: 1">
         <tr
           v-for="headerGroup in table.getHeaderGroups()"
           :key="headerGroup.id"
@@ -19,7 +16,6 @@
             :key="header.id"
             :colSpan="header.colSpan"
             :style="getHeaderSize(header)"
-
           >
             <FlexRender
               v-if="!header.isPlaceholder"
@@ -30,17 +26,16 @@
         </tr>
       </thead>
       <tbody
-      :style="{
+        :style="{
           display: 'grid',
           height: `${rowVirtualizer.getTotalSize()}px`,
           position: 'relative',
         }"
       >
         <tr
-        v-for="(virtualRow, index) in rowVirtualizer.getVirtualItems()"
+          v-for="virtualRow in rowVirtualizer.getVirtualItems()"
           :key="rows[virtualRow.index].id"
           :data-index="virtualRow.index"
-
           :style="{
             display: 'flex',
             position: 'absolute',
@@ -51,11 +46,7 @@
           <td
             v-for="cell in rows[virtualRow.index].getVisibleCells()"
             :key="cell.id"
-            :style="{
-              display: 'flex',
-              width: `${cell.column.getSize()}px`,
-            }"
-
+            :style="getHeaderSize(cell.column)"
           >
             <FlexRender
               :render="cell.column.columnDef.cell"
@@ -64,7 +55,6 @@
           </td>
         </tr>
       </tbody>
-
     </table>
     <button
       @click="selectAllRows"
@@ -82,7 +72,7 @@ import { ref } from "vue";
 import IndeterminateCheckbox from "./IndeterminateCheckbox.vue";
 import { makeData, Person } from "./makeData";
 import dataJSON from "@/assets/MOCK_DATA.json";
-import { mockColumns as columns} from "./mockColumns";
+import { mockColumns as columns } from "./mockColumns";
 
 const tableContainer = ref(null);
 
@@ -90,7 +80,28 @@ const data = ref(dataJSON);
 const rowSelection = ref<RowSelectionState>({});
 
 function getHeaderSize(header) {
-  return `display: flex; width: ${header.getSize()}px;`;
+  let size = "150px";
+  switch (header.id) {
+    case "select":
+      size = "100px";
+      break;
+    case "firstName":
+    case "lastName":
+      size = "150px";
+      break;
+    case "email":
+      size = "300px";
+      break;
+    case "gender":
+    case "date":
+      size = "100px";
+      break;
+
+    default:
+      break;
+  }
+
+  return `display: flex; width: ${size};`;
 }
 
 const rowVirtualizer = useVirtualizer({
@@ -98,9 +109,9 @@ const rowVirtualizer = useVirtualizer({
   estimateSize: () => 25,
   getScrollElement: () => tableContainer.value,
   measureElement:
-  typeof window !== "undefined" && navigator.userAgent.indexOf("Firefox") === -1
-  ? (element) => element.getBoundingClientRect().height
-  : undefined,
+    typeof window !== "undefined" && navigator.userAgent.indexOf("Firefox") === -1
+      ? (element) => element.getBoundingClientRect().height
+      : undefined,
   overscan: 5,
 });
 
