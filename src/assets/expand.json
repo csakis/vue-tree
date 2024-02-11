@@ -6,7 +6,7 @@
       "visits": 921,
       "progress": 19,
       "status": "relationship",
-      "children": [
+      "subRows": [
           {
               "firstName": "Burley",
               "lastName": "Robel",
@@ -14,7 +14,7 @@
               "visits": 428,
               "progress": 49,
               "status": "complicated",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Keon",
                       "lastName": "Ratke",
@@ -64,7 +64,7 @@
               "visits": 554,
               "progress": 72,
               "status": "single",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Garnet",
                       "lastName": "Klocko",
@@ -114,7 +114,7 @@
               "visits": 633,
               "progress": 23,
               "status": "single",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Donavon",
                       "lastName": "Jakubowski",
@@ -164,7 +164,7 @@
               "visits": 189,
               "progress": 38,
               "status": "complicated",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Ethan",
                       "lastName": "Lang",
@@ -214,7 +214,7 @@
               "visits": 353,
               "progress": 29,
               "status": "single",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Jedediah",
                       "lastName": "McClure",
@@ -266,7 +266,7 @@
       "visits": 943,
       "progress": 7,
       "status": "single",
-      "children": [
+      "subRows": [
           {
               "firstName": "Shanie",
               "lastName": "Bednar",
@@ -274,7 +274,7 @@
               "visits": 704,
               "progress": 93,
               "status": "complicated",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Franz",
                       "lastName": "Koch",
@@ -324,7 +324,7 @@
               "visits": 570,
               "progress": 53,
               "status": "complicated",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Shanelle",
                       "lastName": "Stokes",
@@ -374,7 +374,7 @@
               "visits": 877,
               "progress": 47,
               "status": "relationship",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Rubie",
                       "lastName": "Walter",
@@ -424,7 +424,7 @@
               "visits": 627,
               "progress": 13,
               "status": "relationship",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Mariano",
                       "lastName": "Kuphal",
@@ -474,7 +474,7 @@
               "visits": 175,
               "progress": 51,
               "status": "complicated",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Felipe",
                       "lastName": "Yost-Graham",
@@ -526,7 +526,7 @@
       "visits": 113,
       "progress": 1,
       "status": "relationship",
-      "children": [
+      "subRows": [
           {
               "firstName": "Charlene",
               "lastName": "Ernser",
@@ -534,7 +534,7 @@
               "visits": 475,
               "progress": 59,
               "status": "single",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Leanne",
                       "lastName": "Quigley",
@@ -584,7 +584,7 @@
               "visits": 36,
               "progress": 35,
               "status": "relationship",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Okey",
                       "lastName": "Sipes",
@@ -634,7 +634,7 @@
               "visits": 69,
               "progress": 12,
               "status": "complicated",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Gillian",
                       "lastName": "Kirlin",
@@ -684,7 +684,7 @@
               "visits": 152,
               "progress": 80,
               "status": "single",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Erick",
                       "lastName": "Terry",
@@ -734,7 +734,7 @@
               "visits": 200,
               "progress": 45,
               "status": "complicated",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Willy",
                       "lastName": "Swaniawski",
@@ -786,7 +786,7 @@
       "visits": 677,
       "progress": 14,
       "status": "complicated",
-      "children": [
+      "subRows": [
           {
               "firstName": "Nash",
               "lastName": "Durgan",
@@ -794,7 +794,7 @@
               "visits": 867,
               "progress": 74,
               "status": "single",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Lavada",
                       "lastName": "Rogahn",
@@ -844,7 +844,7 @@
               "visits": 258,
               "progress": 38,
               "status": "relationship",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Zoe",
                       "lastName": "Mueller",
@@ -894,7 +894,7 @@
               "visits": 235,
               "progress": 15,
               "status": "complicated",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Vincenzo",
                       "lastName": "Hane",
@@ -944,7 +944,7 @@
               "visits": 758,
               "progress": 89,
               "status": "relationship",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Julianne",
                       "lastName": "Will",
@@ -994,7 +994,7 @@
               "visits": 439,
               "progress": 84,
               "status": "relationship",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Shane",
                       "lastName": "Medhurst",
@@ -1046,7 +1046,7 @@
       "visits": 599,
       "progress": 84,
       "status": "single",
-      "children": [
+      "subRows": [
           {
               "firstName": "Mike",
               "lastName": "Wuckert",
@@ -1054,7 +1054,7 @@
               "visits": 142,
               "progress": 54,
               "status": "single",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Terence",
                       "lastName": "Grady",
@@ -1104,7 +1104,7 @@
               "visits": 747,
               "progress": 63,
               "status": "relationship",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Ebony",
                       "lastName": "DuBuque",
@@ -1154,7 +1154,7 @@
               "visits": 855,
               "progress": 95,
               "status": "single",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Eulalia",
                       "lastName": "Leuschke",
@@ -1204,7 +1204,7 @@
               "visits": 543,
               "progress": 25,
               "status": "complicated",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Haylee",
                       "lastName": "Ratke",
@@ -1254,7 +1254,7 @@
               "visits": 976,
               "progress": 18,
               "status": "relationship",
-              "children": [
+              "subRows": [
                   {
                       "firstName": "Kathlyn",
                       "lastName": "Heller",

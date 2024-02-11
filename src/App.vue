@@ -5,7 +5,7 @@
     ref="tableContainer"
   >
     <table style="display: grid">
-      <thead style="display: grid; position: &quot;sticky&quot;; top: 0; zindex: 1">
+      <thead style="display: grid; top: 0; zindex: 1">
         <tr
           v-for="headerGroup in table.getHeaderGroups()"
           :key="headerGroup.id"
@@ -26,6 +26,7 @@
         </tr>
       </thead>
       <tbody
+        class="pt-5"
         :style="{
           display: 'grid',
           height: `${rowVirtualizer.getTotalSize()}px`,
@@ -65,19 +66,25 @@
   </div>
 </template>
 <script setup lang="tsx">
-import { FlexRender, getCoreRowModel, useVueTable, type RowSelectionState } from "@tanstack/vue-table";
+import {
+  FlexRender,
+  getCoreRowModel,
+  useVueTable,
+  type RowSelectionState,
+  type ExpandedState,
+  getExpandedRowModel,
+} from "@tanstack/vue-table";
 import { measureElement, useVirtualizer } from "@tanstack/vue-virtual";
 import { ref } from "vue";
 
-import IndeterminateCheckbox from "./IndeterminateCheckbox.vue";
-import { makeData, Person } from "./makeData";
-import dataJSON from "@/assets/MOCK_DATA.json";
+import dataJSON from "@/assets/expand.json";
 import { mockColumns as columns } from "./mockColumns";
 
 const tableContainer = ref(null);
 
 const data = ref(dataJSON);
 const rowSelection = ref<RowSelectionState>({});
+const expanded = ref<ExpandedState>({});
 
 function getHeaderSize(header) {
   let size = "150px";
@@ -122,15 +129,28 @@ const table = useVueTable({
   columns,
   state: {
     get rowSelection() {
-      return rowSelection.value;
+      return rowSelection.value
+    },
+    get expanded() {
+      return expanded.value;
     },
   },
+  enableExpanding: true,
   enableRowSelection: true, //enable row selection for all rows
+  onExpandedChange: (updateOrValue) => {
+    expanded.value = typeof updateOrValue === "function" ? updateOrValue(expanded.value) : updateOrValue;
+  },
+
+  getSubRows: (row) => {
+    console.log("🚀:  row:", row.subRows)
+    return row.subRows;
+  },
   // enableRowSelection: row => row.original.age > 18, // or enable row selection conditionally per row
   onRowSelectionChange: (updateOrValue) => {
     rowSelection.value = typeof updateOrValue === "function" ? updateOrValue(rowSelection.value) : updateOrValue;
   },
   getCoreRowModel: getCoreRowModel(),
+  getExpandedRowModel: getExpandedRowModel(),
   debugTable: true,
 });
 
