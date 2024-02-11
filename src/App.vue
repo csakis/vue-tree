@@ -1,15 +1,25 @@
 <template>
-  <div class="p-2">
-    <table>
-      <thead>
+  <div
+    class="p-5 relative overflow-x-hidden"
+    style="height: 500px; width: 900px;"
+
+    ref="tableContainer"
+  >
+    <table style="display: grid">
+      <thead
+      style="display: grid; position: 'sticky'; top: 0; zindex: 1"
+      >
         <tr
           v-for="headerGroup in table.getHeaderGroups()"
           :key="headerGroup.id"
+          style="display: flex; width: 100%"
         >
           <th
             v-for="header in headerGroup.headers"
             :key="header.id"
             :colSpan="header.colSpan"
+            :style="getHeaderSize(header)"
+
           >
             <FlexRender
               v-if="!header.isPlaceholder"
@@ -19,14 +29,33 @@
           </th>
         </tr>
       </thead>
-      <tbody>
+      <tbody
+      :style="{
+          display: 'grid',
+          height: `${rowVirtualizer.getTotalSize()}px`,
+          position: 'relative',
+        }"
+      >
         <tr
-          v-for="row in table.getRowModel().rows"
-          :key="row.id"
+        v-for="(virtualRow, index) in rowVirtualizer.getVirtualItems()"
+          :key="rows[virtualRow.index].id"
+          :data-index="virtualRow.index"
+
+          :style="{
+            display: 'flex',
+            position: 'absolute',
+            transform: `translateY(${virtualRow.start}px)`,
+            width: '100%',
+          }"
         >
           <td
-            v-for="cell in row.getVisibleCells()"
+            v-for="cell in rows[virtualRow.index].getVisibleCells()"
             :key="cell.id"
+            :style="{
+              display: 'flex',
+              width: `${cell.column.getSize()}px`,
+            }"
+
           >
             <FlexRender
               :render="cell.column.columnDef.cell"
@@ -35,20 +64,8 @@
           </td>
         </tr>
       </tbody>
-      <tfoot>
-        <tr>
-          <td className="p-1">
-            <IndeterminateCheckbox
-              :checked="table.getIsAllPageRowsSelected()"
-              :indeterminate="table.getIsSomePageRowsSelected()"
-              :onChange="table.getToggleAllPageRowsSelectedHandler()"
-            />
-          </td>
-          <td :colSpan="20">Page Rows {{ table.getRowModel().rows.length }}</td>
-        </tr>
-      </tfoot>
+
     </table>
-    <div class="h-4" />
     <button
       @click="selectAllRows"
       class="border p-2"
@@ -58,7 +75,8 @@
   </div>
 </template>
 <script setup lang="tsx">
-import { FlexRender, getCoreRowModel, useVueTable, createColumnHelper, RowSelectionState } from "@tanstack/vue-table";
+import { FlexRender, getCoreRowModel, useVueTable, type RowSelectionState } from "@tanstack/vue-table";
+import { measureElement, useVirtualizer } from "@tanstack/vue-virtual";
 import { ref } from "vue";
 
 import IndeterminateCheckbox from "./IndeterminateCheckbox.vue";
@@ -66,14 +84,25 @@ import { makeData, Person } from "./makeData";
 import dataJSON from "@/assets/MOCK_DATA.json";
 import { mockColumns as columns} from "./mockColumns";
 
-const columnHelper = createColumnHelper<Person>();
+const tableContainer = ref(null);
 
 const data = ref(dataJSON);
 const rowSelection = ref<RowSelectionState>({});
 
-const rerender = () => {
-  data.value = makeData(10);
-};
+function getHeaderSize(header) {
+  return `display: flex; width: ${header.getSize()}px;`;
+}
+
+const rowVirtualizer = useVirtualizer({
+  count: data.value.length,
+  estimateSize: () => 25,
+  getScrollElement: () => tableContainer.value,
+  measureElement:
+  typeof window !== "undefined" && navigator.userAgent.indexOf("Firefox") === -1
+  ? (element) => element.getBoundingClientRect().height
+  : undefined,
+  overscan: 5,
+});
 
 const table = useVueTable({
   get data() {
@@ -91,7 +120,10 @@ const table = useVueTable({
     rowSelection.value = typeof updateOrValue === "function" ? updateOrValue(rowSelection.value) : updateOrValue;
   },
   getCoreRowModel: getCoreRowModel(),
+  debugTable: true,
 });
+
+const { rows } = table.getRowModel();
 
 function selectAllRows(e) {
   table.getToggleAllPageRowsSelectedHandler()(e);

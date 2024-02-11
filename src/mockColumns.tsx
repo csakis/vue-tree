@@ -16,13 +16,13 @@ export const mockColumns = [
     },
     cell: ({ row }: { row: any }) => {
       return (
-        <div className="px-1">
+
           <IndeterminateCheckbox
+            index={row.index}
             checked={row.getIsSelected()}
             disabled={!row.getCanSelect()}
             onChange={row.getToggleSelectedHandler()}
           ></IndeterminateCheckbox>
-        </div>
       );
     },
   },

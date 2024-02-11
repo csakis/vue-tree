@@ -2,7 +2,8 @@
 import { ref, toRefs } from 'vue'
 
 const props = defineProps<{
-  indeterminate: boolean
+  index?: number;
+  indeterminate?: boolean
   className?: string
 }>()
 
@@ -12,11 +13,16 @@ const inputRef = ref<any>(null)
 </script>
 
 <template>
-  <input
+  <div class="mx-2 w-full flex align-items-center justify-content-between">
+    <input
     type="checkbox"
     ref="inputRef"
-    :class="`${className} cursor-pointer`"
+    class="cursor-pointer"
     :indeterminate="indeterminate"
     v-bind="$attrs"
-  />
+    />
+    <span>
+      {{ index }}
+    </span>
+  </div>
 </template>
