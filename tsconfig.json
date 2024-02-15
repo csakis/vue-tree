@@ -4,7 +4,7 @@
     "env.d.ts",
     "src/**/*",
     "src/**/*.vue",
-    "src/**/*.ts", "src/**/*.tsx",
+    "src/**/*.ts", 
     "auto-imports.d.ts",
     "components.d.ts"
   ],
@@ -15,7 +15,6 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "jsx": "preserve",
     "lib": ["es6", "esnext.bigint", "dom"]
 
   },
