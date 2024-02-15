@@ -4,6 +4,8 @@
     style="height: 500px; width: 1000px"
     ref="tableContainer"
   >
+  <div :style="{height: `${totalSize}px`}">
+
     <table style="display: grid">
       <thead style="display: grid; top: 0; zindex: 1">
         <tr
@@ -26,7 +28,6 @@
         </tr>
       </thead>
       <tbody
-        class="pt-5"
         :style="{
           display: 'grid',
           height: `${rowVirtualizer.getTotalSize()}px`,
@@ -45,6 +46,7 @@
           }"
         >
           <td
+         
             v-for="cell in rows[virtualRow.index].getVisibleCells()"
             :key="cell.id"
             :style="getHeaderSize(cell.column)"
@@ -57,13 +59,17 @@
         </tr>
       </tbody>
     </table>
-    <button
-      @click="selectAllRows"
-      class="border p-2"
-    >
-      select all
-    </button>
   </div>
+</div>
+<div class="m-5">
+
+  <button
+  @click="selectAllRows"
+  class="border p-2"
+  >
+  select all
+</button>
+</div>
 </template>
 <script setup lang="tsx">
 import {
@@ -80,11 +86,12 @@ import { ref } from "vue";
 import dataJSON from "@/assets/expand.json";
 import { mockColumns as columns } from "./mockColumns";
 
-const tableContainer = ref(null);
+const tableContainer = ref();
 
 const data = ref(dataJSON);
 const rowSelection = ref<RowSelectionState>({});
 const expanded = ref<ExpandedState>({});
+
 
 function getHeaderSize(header) {
   let size = "150px";
@@ -111,16 +118,7 @@ function getHeaderSize(header) {
   return `display: flex; width: ${size};`;
 }
 
-const rowVirtualizer = useVirtualizer({
-  count: data.value.length,
-  estimateSize: () => 25,
-  getScrollElement: () => tableContainer.value,
-  measureElement:
-    typeof window !== "undefined" && navigator.userAgent.indexOf("Firefox") === -1
-      ? (element) => element.getBoundingClientRect().height
-      : undefined,
-  overscan: 5,
-});
+
 
 const table = useVueTable({
   get data() {
@@ -142,7 +140,6 @@ const table = useVueTable({
   },
 
   getSubRows: (row) => {
-    console.log("🚀:  row:", row.subRows)
     return row.subRows;
   },
   // enableRowSelection: row => row.original.age > 18, // or enable row selection conditionally per row
@@ -154,7 +151,26 @@ const table = useVueTable({
   debugTable: true,
 });
 
-const { rows } = table.getRowModel();
+const rows = computed(()=>table.getRowModel().rows);
+const rowVirtualizerOptions = computed(() => {
+  return {
+    count: rows.value.length,
+    getScrollElement: () => tableContainer.value,
+    measureElement:
+    typeof window !== "undefined" && navigator.userAgent.indexOf("Firefox") === -1
+      ? (element) => element.getBoundingClientRect().height
+      : undefined,
+    estimateSize: () => 30,
+    overscan: 5,
+  }
+})
+
+const rowVirtualizer = useVirtualizer(rowVirtualizerOptions);
+
+const totalSize = computed(() => rowVirtualizer.value.getTotalSize())
+
+watchEffect(() => {
+});
 
 function selectAllRows(e) {
   table.getToggleAllPageRowsSelectedHandler()(e);
