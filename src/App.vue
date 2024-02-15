@@ -1,7 +1,7 @@
 <template>
   <div
     class="p-5 relative overflow-x-hidden"
-    style="height: 500px; width: 1000px"
+    style="height: 500px; ${}"
     ref="tableContainer"
   >
   <div :style="{height: `${totalSize}px`}">
@@ -46,7 +46,7 @@
           }"
         >
           <td
-         
+
             v-for="cell in rows[virtualRow.index].getVisibleCells()"
             :key="cell.id"
             :style="getHeaderSize(cell.column)"
@@ -140,7 +140,7 @@ const table = useVueTable({
   },
 
   getSubRows: (row) => {
-    return row.subRows;
+    return row.children;
   },
   // enableRowSelection: row => row.original.age > 18, // or enable row selection conditionally per row
   onRowSelectionChange: (updateOrValue) => {
