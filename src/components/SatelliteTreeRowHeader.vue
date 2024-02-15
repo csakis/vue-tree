@@ -1,7 +1,7 @@
 <template>
   <div
     class="flex align-items-center"
-    :style="{ paddingLeft: `${(row.depth * 2+1)}rem`,}"
+    :style="{ paddingLeft: `${(row.depth * 1.5+1)}rem`,}"
   >
     <input
     v-if="row.getCanExpand()"
@@ -30,8 +30,14 @@
         class="pi pi-angle-right"
       />
     </span>
+    <span v-if="row.original.nodeType==='satellite'">
+      {{ row.original.name}} - {{ row.original.id}}
+    </span>
+    <span v-else>
+      {{ row.original.name}}
+    </span>
 
-      {{ row.original.firstName}}  {{ row.original.lastName }}
+
 
 
   </div>
@@ -44,14 +50,7 @@ const props = defineProps({
     required: true,
   },
 });
-
-function handleClick(e) {
-console.log("🚀:  e:", e.target.value)
-console.log("indeterm", props.row.getIsSomeSelected())
-console.log("row", props.row.getIsSelected())
-
-  props.row.getToggleSelectedHandler()(e);
-}
+  console.log("🚀:  row:", props.row.original)
 
 </script>
 

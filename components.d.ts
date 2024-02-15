@@ -10,6 +10,7 @@ declare module 'vue' {
     Button: typeof import('primevue/button')['default']
     SatelliteTreeColumnHeader: typeof import('./src/components/SatelliteTreeColumnHeader.vue')['default']
     SatelliteTreeRowHeader: typeof import('./src/components/SatelliteTreeRowHeader.vue')['default']
+    TableHeaderCell: typeof import('./src/components/TableHeaderCell.vue')['default']
     TreeCheckbox: typeof import('./src/components/TreeCheckbox.vue')['default']
   }
 }

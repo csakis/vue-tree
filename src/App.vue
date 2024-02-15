@@ -1,7 +1,7 @@
 <template>
   <div
-    class="p-5 relative overflow-x-hidden"
-    style="height: 500px; ${}"
+    class="p-5 relative overflow-x-hidden flex"
+    style="height: 500px;"
     ref="tableContainer"
   >
   <div :style="{height: `${totalSize}px`}">
@@ -9,9 +9,9 @@
     <table style="display: grid">
       <thead style="display: grid; top: 0; zindex: 1">
         <tr
+        class="flex"
           v-for="headerGroup in table.getHeaderGroups()"
           :key="headerGroup.id"
-          style="display: flex; width: 100%"
         >
           <th
             v-for="header in headerGroup.headers"
@@ -41,8 +41,7 @@
           :style="{
             display: 'flex',
             position: 'absolute',
-            transform: `translateY(${virtualRow.start}px)`,
-            width: '100%',
+            transform: `translateY(${virtualRow.start}px)`
           }"
         >
           <td
@@ -89,25 +88,26 @@ import {
 import { measureElement, useVirtualizer } from "@tanstack/vue-virtual";
 import { ref } from "vue";
 
-import dataJSON from "@/assets/expand.json";
+import dataJSON from "@/assets/data.json";
 import { mockColumns as columns } from "./mockColumns";
 
 const tableContainer = ref();
 
-const data = ref(dataJSON);
+const data = ref(dataJSON.root.children);
+console.log("🚀:  data:", data.value)
 const rowSelection = ref<RowSelectionState>({});
 const expanded = ref<ExpandedState>({});
 
 
 function getHeaderSize(header) {
-  let size = "150px";
+  let size = "30px";
   switch (header.id) {
-    case "Satellite":
+    case "name":
       size = "450px";
       break;
     case "firstName":
     case "lastName":
-      size = "150px";
+      size = "50px";
       break;
     case "email":
       size = "300px";
@@ -166,7 +166,7 @@ const rowVirtualizerOptions = computed(() => {
     typeof window !== "undefined" && navigator.userAgent.indexOf("Firefox") === -1
       ? (element) => element.getBoundingClientRect().height
       : undefined,
-    estimateSize: () => 30,
+    estimateSize: () => 25,
     overscan: 5,
   }
 })
@@ -185,13 +185,25 @@ html {
 
 table {
   border: 1px solid lightgray;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 tbody {
   border-bottom: 1px solid lightgray;
 }
 
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
 th {
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding: 2px 4px;
+}
+
+td {
   border-bottom: 1px solid lightgray;
   border-right: 1px solid lightgray;
   padding: 2px 4px;

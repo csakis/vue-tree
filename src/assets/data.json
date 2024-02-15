@@ -1809,6 +1809,7 @@
     "sky": false,
     "show": true,
     "data": null,
-    "nodeType": "root"
+    "nodeType": "root",
+    "name": "root"
   }
 }
