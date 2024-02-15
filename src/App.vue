@@ -63,12 +63,18 @@
 </div>
 <div class="m-5">
 
-  <button
-  @click="selectAllRows"
-  class="border p-2"
-  >
-  select all
-</button>
+  <Button
+  @click=" table.toggleAllRowsSelected()"
+  class="border p-2 m-2"
+  label="Select all"
+  />
+
+<Button
+@click=" table.toggleAllRowsExpanded()"
+  class="border p-2 m-2"
+  label="Expand all"
+
+/>
 </div>
 </template>
 <script setup lang="tsx">
@@ -96,8 +102,8 @@ const expanded = ref<ExpandedState>({});
 function getHeaderSize(header) {
   let size = "150px";
   switch (header.id) {
-    case "select":
-      size = "100px";
+    case "Satellite":
+      size = "450px";
       break;
     case "firstName":
     case "lastName":
@@ -169,12 +175,6 @@ const rowVirtualizer = useVirtualizer(rowVirtualizerOptions);
 
 const totalSize = computed(() => rowVirtualizer.value.getTotalSize())
 
-watchEffect(() => {
-});
-
-function selectAllRows(e) {
-  table.getToggleAllPageRowsSelectedHandler()(e);
-}
 </script>
 
 <style>
